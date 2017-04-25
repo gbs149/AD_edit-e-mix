@@ -1,50 +1,271 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="pt-BR">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="noindex">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<title>Edição e mixagem de audiodescrição</title>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2><strong>Edição e mixagem de audiodescrição</strong></h2>
+				<p>Gabriel Bohrer Schmitt</p>
+			</section>
+
+
+
+			<section>
+				<h1>Edição</h1>
+			</section>
+
+
+
+			<section>
+				<h3>O que é?</h3>
+				<img class="stretch" src="assets/puzzle.jpg" alt="">
+				<p class="fragment fade-right">Montagem e posicionamento da audiodescrição em relação ao filme.</p>
+				<p class="fragment fade-right">Lida com o aspecto temporal.</p>
+			</section>
+
+
+
+			<section>
+				<section>
+					<h3>Objetivos</h3>
+					<ul>
+						<li class="fragment fade-right">Sincronismo com imagem e som</li>
+						<li class="fragment fade-right">Evitar a sobreposição, sempre que possível</li>
+						<li class="fragment fade-right">Estabelecer o ritmo</li>
+						<li class="fragment fade-right">Dialogar com a trilha do filme</li>
+					</ul>
+				</section>
+				<section>
+					<video controls>
+						<source src="assets/edit-sincronismo.mp4" type="video/mp4"> Your browser does not support the audio element.
+					</video>
+				</section>
+				<section>
+					<video controls>
+						<source src="assets/edit-ritmo.mp4" type="video/mp4"> Your browser does not support the audio element.
+					</video>
+				</section>
+			</section>
+
+
+
+
+			<section>
+				<h3>Recursos</h3>
+				<img class="stretch" src="assets/vegas-edit.png" alt="">
+				<p>Ferramentas de recorte e colagem</p>
+			</section>
+
+
+
+			<section>
+				<section>
+					<h3>O melhor amigo do editor</h3>
+					<h3 class="fragment grow">TIME STRETCH</h3>
+					<p class="fragment"><small>Advertência: esse recurso só deve ser usado por profissionais altamente qualificados.</small></p>
+				</section>
+
+				<section>
+					<video controls>
+						<source src="assets/edit-ts_pos.mp4" type="video/mp4"> Your browser does not support the audio element.
+					</video>
+				</section>
+			</section>
+
+
+
+			<section>
+				<h3>Relação com o roteiro</h3>
+				<ul>
+					<li class="fragment fade-right">Qualidade do roteiro => qualidade de edição</li>
+					<li class="fragment fade-right">Redução de inserções muito longas</li>
+					<li class="fragment fade-right">Correção de erros</li>
+					<li class="fragment fade-right">O roteirista como editor</li>
+				</ul>
+			</section>
+
+
+
+			<section>
+				<h3>Relação com a narração</h3>
+				<ul>
+					<li class="fragment fade-right">Velocidade de edição</li>
+					<li class="fragment fade-right">Melhor qualidade</li>
+				</ul>
+			</section>
+
+
+
+
+
+
+
+			<section>
+				<h1>Mixagem</h1>
+			</section>
+
+
+
+			<section>
+				<h3>O que é?</h3>
+				<img class="stretch" src="assets/mixer.jpg" alt="">
+				<p class="fragment fade-right">Mistura, mescla, união.</p>
+				<p class="fragment fade-right">Equilíbrio e harmonização da audiodescrição <br> com o som do filme.</p>
+			</section>
+
+
+
+			<section>
+				<h3>Critérios</h3>
+				<p class="fragment fade-right">Garantir o entendimento, <br> tanto da AD, quanto do som original.</p>
+				<p class="fragment fade-right">Produzir a melhor experiência possível.</p>
+				<p class="fragment fade-right">Preservar ao máximo o som original.</p>
+			</section>
+
+
+
+			<section>
+				<h2>Ferramentas</h2>
+				<img class="stretch" src="assets/eq.jpg" alt="">
+			</section>
+
+
+
+			<section>
+				<h3>Narração</h3>
+				<p>Processadores normalmente usadas <br>para tratamento de voz:</p>
+				<ul>
+					<li class="fragment fade-right">Equalizador</li>
+					<li class="fragment fade-right">Compressor</li>
+					<li class="fragment fade-right">Expander</li>
+					<li class="fragment fade-right">De-Esser</li>
+				</ul>
+			</section>
+
+
+
+			<section>
+				<h3>Outros efeitos</h3>
+				<ul>
+					<li class="fragment fade-right">Reverb</li>
+					<li class="fragment fade-right">Delay</li>
+					<li class="fragment fade-right">Pitch shifter</li>
+				</ul>
+				<p class="fragment fade-up">A audiodescrição é uma atividade criativa, <br>temos liberdade para experimentar.</p>
+			</section>
+
+
+
+			<section>
+				<h3>Áudio original</h3>
+				<ul>
+					<li class="fragment fade-right">…</li>
+					<li class="fragment fade-right">Automação de volume</li>
+				</ul>
+			</section>
+
+
+
+			<section data-transition="slide-in fade-out">
+				<h3>Automação</h3>
+				<img class="stretch" src="assets/vegas-auto.png" alt="">
+			</section>
+
+
+
+			<section data-transition="fade-in slide-out">
+				<h3>Automação</h3>
+				<img class="stretch" src="assets/vegas-auto2.png" alt="">
+			</section>
+
+
+
+			<section>
+				<h3>Subgrupos separados</h3>
+				<ul>
+					<li>Diálogos</li>
+					<li>Efeitos</li>
+					<li>Música</li>
+				</ul>
+			</section>
+
+
+
+			<section>
+				<h3>Loudness</h3>
+				<h4>Intensidade subjetiva de áudio</h4>
+				<p>Percepção da intensidade (volume) do som ou dos sinais de áudio quando estes são reproduzidos acusticamente.</p>
+			</section>
+
+
+
+			<section>
+				<h4>Exigência legal para emissoras de TV digital</h4>
+				<ul>
+					<li><a href="http://www.abert.org.br/web/index.php/notmenu/item/20989-loudness-comeca-a-ser-cobrado-a-partir-de-12-de-julho">Abert – Loudness é cobrado desde 12 de julho de 2013</a></li>
+					<li><a href="http://www.abert.org.br/web/index.php/legistecnica/item/portaria-n-354-de-11-de-julho-de-2013">Abert – Portaria nº 354, de 11 de julho de 2012 </a></li>
+					<li><a href="http://www.ebc.com.br/institucional/lei-de-acesso-a-informacao/nor-704-norma-de-formato-padrao-de-entrega-de-conteudo-audiovisual-em">EBC – Nor 704 – Norma de Formato Padrão de Entrega de Conteúdo Audiovisual em Alta Definição</a></li>
+					<li><a href="http://globosatcomercial.globo.com/uploads/cheditor/file/Especificacoes_%20Tecnicas(1).pdf">Globosat – Especificações técnicas</a></li>
+				</ul>
+			</section>
+
+
+
+			<section>
+				<h3>Contato</h3>
+				<p>gabriel@milpalavras.net.br</p>
+				<br>
+				<p>Apresentação disponível em </p>
+				<p>https://gbs149.github.io/ad-edit-e-mix/index.html</p>
+			</section>
+
+
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+			slideNumber: false,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>
